@@ -1,0 +1,1 @@
+https://www.mediawiki.org/wiki/API:REST_API/Reference
