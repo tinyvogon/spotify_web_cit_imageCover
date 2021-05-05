@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/voila/notebooks
+hooks:
+  BeforeInstall:
+    - location: Scripts/stopvoila.sh
+      timeout: 100
+  AfterInstall:
+    - location: Scripts/startvoila.sh
+      timeout: 200
