@@ -1,6 +1,9 @@
 #! /bin/bash
 
-if [ "$APPLICATION_NAME" == "voila-repo" ]
+if [ -d /home/ubuntu/voila/notebooks]
 then
-	sudo systemctl stop voila.service
+	rm -rf /home/ubuntu/voila/notebooks/*
+	sudo systemctl stop voila
+else
+	exit
 fi
